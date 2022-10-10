@@ -28,6 +28,7 @@ exports[`<Main /> Layout Should render the heading 1`] = `
 
 .c2 {
   font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .c3 {
@@ -47,17 +48,24 @@ exports[`<Main /> Layout Should render the heading 1`] = `
   <img
     alt="Imagem de um átomo e React Avançado escrito ao lado."
     class="c1"
-    src="/img/logo.svg"
+    src="/img/boilerplatenext.svg"
   />
   <h1
     class="c2"
   >
-    React Avançado
+    A boilerplate to NextJS Projects4 
   </h1>
   <h2
     class="c3"
   >
-    Typescript, ReactJS, NextJS e Styled Components
+    A simple project starter to work with TypeScript, React, NextJS and Styled, based on the course React Avançado by
+     
+    <a
+      href="https://github.com/willianjusten/my-trips"
+    >
+      Willian Justen de Vasconcellos
+       
+    </a>
   </h2>
   <img
     alt="uma bussola, um mapa, uma maquina fotografica e um relógio"
