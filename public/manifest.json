@@ -1,6 +1,6 @@
 {
-  "name": "React Avançado",
-  "short_name": "My Maps",
+  "name": "MyLocals",
+  "short_name": "My Locals",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#06092B",
-  "description": "A simple project to show my favorite spots in the world.",
+  "description": "A simple project to show my the places when I lived in the wolrd.",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#06092B"

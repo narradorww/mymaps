@@ -17,6 +17,7 @@ function App({ Component, pageProps }: AppProps) {
           integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
           crossOrigin=""
         />
+
         <meta name="theme-color" content="#06092B" />
         <meta
           name="description"

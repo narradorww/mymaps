@@ -5,10 +5,10 @@ exports[`LinkWrapper should render link and children 1`] = `
   "asFragment": [Function],
   "baseElement": .c0 {
   position: fixed;
-  z-indez: 1100;
+  z-index: 9999;
   top: var(--medium);
   right: var(--medium);
-  color: var(--white);
+  color: var(--grey);
   cursor: pointer;
 }
 
@@ -47,10 +47,10 @@ exports[`LinkWrapper should render link and children 1`] = `
   </body>,
   "container": .c0 {
   position: fixed;
-  z-indez: 1100;
+  z-index: 9999;
   top: var(--medium);
   right: var(--medium);
-  color: var(--white);
+  color: var(--grey);
   cursor: pointer;
 }
 

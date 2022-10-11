@@ -5,7 +5,7 @@ position: fixed;
 z-index: 9999;
 top: var(--medium);
 right: var(--medium);
-color: var(--background);
+color: var(--grey);
 cursor: pointer;
 
 svg{
