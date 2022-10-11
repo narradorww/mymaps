@@ -1,4 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
+/**
+ * @type {import('next').NextConfig}
+ */
+
 const withPWA = require('next-pwa')({
   runtimeCaching: [
     {
