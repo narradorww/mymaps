@@ -1,23 +1,26 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 /**
  * @type {import('next').NextConfig}
  */
 
-const withPWA = require('next-pwa')({
-  runtimeCaching: [
-    {
-      urlPattern: / /,
-      handler: 'NetworkFirst'
-    }
-  ]
-})
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const withPWA = require('next-pwa')
+const runtimeCaching = require('next-pwa/cache')
+// ({
+//   runtimeCaching: [
+//     {
+//       urlPattern: / /,
+//       handler: 'NetworkFirst'
+//     }
+//   ]
+// })
 
-const isProd = process.env.NODE_ENV === 'production'
-
-module.exports = withPWA({
+export default withPWA({
   pwa: {
     dest: 'public',
-    disable: isProd ? false : true
+    runtimeCaching,
+    disable: process.env.NODE_ENV === 'development'
   },
   images: {
     domains: ['media.graphassets.com']
