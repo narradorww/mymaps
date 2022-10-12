@@ -15,5 +15,6 @@ module.exports = withPWA({
   },
   images: {
     domains: ['media.graphassets.com']
-  }
+  },
+  future: { webpack5: true }
 })
