@@ -39,7 +39,7 @@
     "react-dom": "18.2.0",
     "react-leaflet": "^4.1.0",
     "styled-components": "^5.3.6",
-    "webpack": "5.66.0"
+    "webpack": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
