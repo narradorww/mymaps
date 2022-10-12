@@ -1,6 +1,6 @@
 import client from 'graphql/client'
 import {
-  GetPagesBySlugQuery,
+  GetPageBySlugQuery,
   GetPagesQuery
 } from 'graphql/generated/graphql.ts/graphql'
 import { GET_PAGES, GET_PAGE_BY_SLUG } from 'graphql/queries'
@@ -30,7 +30,7 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { page } = await client.request<GetPagesBySlugQuery>(GET_PAGE_BY_SLUG, {
+  const { page } = await client.request<GetPageBySlugQuery>(GET_PAGE_BY_SLUG, {
     slug: `${params?.slug}`
   })
 
