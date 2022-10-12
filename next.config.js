@@ -6,21 +6,12 @@
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const withPWA = require('next-pwa')
-const runtimeCaching = require('next-pwa/cache')
-// ({
-//   runtimeCaching: [
-//     {
-//       urlPattern: / /,
-//       handler: 'NetworkFirst'
-//     }
-//   ]
-// })
+const isProd = process.env.NODE_ENV === 'production'
 
-export default withPWA({
+module.exports = withPWA({
   pwa: {
     dest: 'public',
-    runtimeCaching,
-    disable: process.env.NODE_ENV === 'development'
+    disable: !isProd
   },
   images: {
     domains: ['media.graphassets.com']
